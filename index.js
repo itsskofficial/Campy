@@ -23,9 +23,10 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname , 'views'))
 
 app.get('/makecampground', async (req, res) => {
-    res.send("Make campground here")
+    res.send("Making campground here")
     const camp = new Campground({ title: "Camp" })
     await camp.save()
+    res.send(camp)
 })
 app.get('/', (req,res) => {
     res.render('index')
