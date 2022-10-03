@@ -22,8 +22,10 @@ mongoose.connect('mongodb://localhost:27017/campy', {
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname , 'views'))
 
-app.get('/makecampground', (req, res) => {
+app.get('/makecampground', async (req, res) => {
     res.send("Make campground here")
+    const camp = new Campground({ title: "Camp" })
+    await camp.save()
 })
 app.get('/', (req,res) => {
     res.render('index')
