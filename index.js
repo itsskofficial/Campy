@@ -24,7 +24,7 @@ app.set('views', path.join(__dirname , 'views'))
 
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
-    const camp = new Campground({ title: "Camp" })
+    const camp = new Campground({ title: "Camp", description= "Our first camping ground"})
     await camp.save()
     res.send(camp)
 })
