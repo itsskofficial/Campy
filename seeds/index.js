@@ -16,6 +16,7 @@ db.once("open",() => {
 
 const sample = array => array[Math.floor(Math.random() * array.length)]
 console.log(sample(descriptors))
+console.log(sample(places))
 
 const seedDB = async () => {
     await Campground.deleteMany({})
@@ -24,10 +25,12 @@ const seedDB = async () => {
         const randnum=Math.floor(Math.random() * 1000)
         const camp = new Campground({
             location: `${cities[randnum].city}, ${cities[randnum].state}`,
-            title: `${sample(descriptors)} ${sample(places)}`
+            name: `${sample(descriptors)} ${sample(places)}`
         })
         await camp.save()
     }
 }
 
-seedDB()
+seedDB().then(() => {
+    mongoose.connection.close()
+})
