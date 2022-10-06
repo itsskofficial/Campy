@@ -7,16 +7,14 @@ const app = express()
 
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology:true
 })
-    .then(() => {
-    console.log("Database connected")
-    })
-    .catch(() => {
-        console.log("Database not connected")
-    })
 
+const db = mongoose.connection
+db.on("error", console.error.bind(console, "connection error:"))
+db.once("open",() => {
+    console.log("Database connected")
+})
    
 
 app.set('view engine', 'ejs')
@@ -24,7 +22,7 @@ app.set('views', path.join(__dirname , 'views'))
 
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
-    const camp = new Campground({ title: "Camp", description= "Our first camping ground"})
+    const camp = new Campground({ title: "Camp", description: "Our first camping ground"})
     await camp.save()
     res.send(camp)
 })
