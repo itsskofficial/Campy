@@ -35,6 +35,9 @@ seedDB().then(() => {
     mongoose.connection.close()
 })
 
+seedDB.catch(() => {
+})
 
+console.log("Database connectivity")
 
-
+console.log("where are u?")
