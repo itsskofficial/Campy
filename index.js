@@ -35,6 +35,7 @@ app.get('/campgrounds', async (req, res) => {
     const campgrounds = await campgrounds.find({})
     res.render('campgrounds/index', campgrounds)
 })
+
 app.listen('5500', () => {
     console.log("App listening on port 5500")
 })
