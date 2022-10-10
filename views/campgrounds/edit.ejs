@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Campground</title>
+    <title>Edit Campground</title>
 </head>
 <body>
     <h1>Hello</h1>
@@ -12,12 +12,12 @@
         <label for="name">
             Enter campground name
         </label>
-        <input type="text" name="campground[name]" id="name">
+        <input type="text" name="campground[name]" id="name" value = <%= campground.name %> >
         <label for="location">
             Enter campground location
         </label>
-        <input type="text" name="campground[location]" id="location">
-        <button>Add new campground</button>
+        <input type="text" name="campground[location]" id="location" <%= campground.location %> >
+        <button>Edit campground</button>
     </form>
     <h2><a href="/campgrounds">Show all campgrounds</a></h2>
 </body>
