@@ -1,10 +1,12 @@
 const express = require('express')
 const path = require('path')
 const mongoose = require('mongoose')
+const methodOverride=require('method-override')
 const Campground = require('./models/campground')
 
 const app = express()
-app.use(express.urlencoded({ extended :true}))
+app.use(express.urlencoded({ extended: true }))
+app.use(methodOverride("_method"))
 
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
@@ -58,7 +60,14 @@ app.post('/campgrounds', async (req, res) => {
     res.redirect(`campgrounds/${campground.id}`)
 })
 
+app.put('/campgrounds/:id', async (req, res) => {
+    const campground = await Campground.findById(req.params.id)
+    await campground.update({...req.body.campground })
+    res.redirect(`/campgrounds/${campground.id}`)
+})
+
 app.listen('5500', () => {
     console.log("App listening on port 5500")
 })
+
 
