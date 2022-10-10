@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Campground = require('../models/campground')
+const { indexOf } = require('./cities')
 const cities = require('./cities')
 const {descriptors,places}=require('./seedhelpers')
 
@@ -40,4 +41,3 @@ seedDB.catch(() => {
 
 console.log("Database connectivity")
 
-console.log("where are u?")
