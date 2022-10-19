@@ -1,6 +1,7 @@
 footer#footer{
     display: block;
     background-color: black;
+    padding: 20px;
 }
 
 span#copyright{
