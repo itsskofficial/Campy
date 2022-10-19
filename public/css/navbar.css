@@ -14,6 +14,7 @@ div#logo img{
 
 div#menu ul{
     display: flex;
+    ;
     list-style-type: none;
 }
 
