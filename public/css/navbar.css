@@ -3,6 +3,10 @@ nav#navbar{
     padding: 20px;
 }
 
+div#navbar-container{
+    display: ;
+}
+
 div#logo img{
     height: 20px;
 }
