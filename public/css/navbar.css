@@ -37,6 +37,6 @@ div#menu ul li a{
 }
 
 div#menu ul li a:hover{
-    color: blue;
+    color: blue!important;
 }
 
