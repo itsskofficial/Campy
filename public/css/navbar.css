@@ -18,7 +18,7 @@ div#logo img{
 
 div#menu{
     width: 50%;
-    overflow: ;
+    overflow: hidden;
 }
 
 div#menu ul{
