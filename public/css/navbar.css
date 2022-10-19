@@ -8,8 +8,10 @@ nav#navbar ul {
     list-style-type: none;
 }
 
-nav#navbar ul li {
+nav#navbar ul li{
     margin: 15px;
-    color: white;
 }
 
+nav#navbar ul li a{
+
+}
