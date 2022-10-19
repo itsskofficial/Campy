@@ -4,7 +4,9 @@ footer#footer{
     padding: 20px;
 }
 
-foo
+div#footer-container{
+    justify-content: center;
+}
 
 span#copyright{
     width: 100%;
