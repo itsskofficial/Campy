@@ -19,6 +19,7 @@ div#menu{
 div#menu ul{
     display: flex;
     list-style-type: none;
+    align-items: flex-end;
 }
 
 div#menu ul li{
