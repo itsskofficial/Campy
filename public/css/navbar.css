@@ -18,13 +18,12 @@ div#logo img{
 
 div#menu{
     width: 50%;
-    align-items: right;
 }
 
 div#menu ul{
     display: flex;
     list-style-type: none;
-    align-items: flex-end;
+    align-items: right;
 }
 
 div#menu ul li{
