@@ -32,4 +32,5 @@ div#menu ul li{
 
 div#menu ul li a{
     color: white;
+    text-decoration: none;
 }
