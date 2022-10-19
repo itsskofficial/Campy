@@ -40,3 +40,10 @@ div#menu ul li a:hover{
     font-weight: bold;
 }
 
+div#menu .sticky{
+    
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
+
