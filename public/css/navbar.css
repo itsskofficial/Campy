@@ -3,10 +3,9 @@ nav#navbar {
     padding: 20px;
 }
 
-div#navbar-container {
-    display: flex;
-}
+
 nav#navbar ul {
+    display: flex;
     list-style-type: none;
 }
 
