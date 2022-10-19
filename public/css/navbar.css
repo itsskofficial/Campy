@@ -3,6 +3,9 @@ nav#navbar{
     padding: 20px;
 }
 
+div#logo img{
+    height: 20px;
+}
 div#menu ul{
     display: flex;
     list-style-type: none;
