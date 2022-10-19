@@ -8,6 +8,7 @@ const Campground = require('./models/campground')
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
+app.use(express.static(__dirname + '/public'));
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
