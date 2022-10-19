@@ -3,6 +3,7 @@ nav#navbar {
     padding: 20px;
 }
 
+nav#navbar
 nav#navbar ul {
     list-style-type: none;
 }
