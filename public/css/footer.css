@@ -2,8 +2,9 @@ footer#footer{
     display: block;
     background-color: black;
     padding: 20px;
-    justify-content: center;
 }
+
+foo
 
 span#copyright{
     width: 100%;
