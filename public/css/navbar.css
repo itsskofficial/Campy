@@ -1,4 +1,7 @@
-nav
+nav#navbar {
+    background-color: black;
+    
+}
 
 nav#navbar ul {
     list-style-type: none;
