@@ -2,11 +2,11 @@ footer#footer{
     display: block;
     background-color: black;
     padding: 20px;
-    justify-content: center;
 }
 
 span#copyright{
     color: white;
     font-size: medium;
     font-weight: 600;
+    justify-content: center;
 }
