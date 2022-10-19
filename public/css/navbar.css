@@ -8,6 +8,7 @@ div#navbar-container{
 }
 
 div#logo img{
+    margin: 15px;
     height: 20px;
 }
 
