@@ -36,7 +36,6 @@ div#menu ul li a{
 }
 
 div#menu ul li a:hover{
-    
-    text-decoration: none;
+    font-weight: bold;
 }
 
