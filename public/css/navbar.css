@@ -23,7 +23,7 @@ div#menu{
 div#menu ul{
     display: flex;
     list-style-type: none;
-    align-items: right;
+    justify-content: right;
 }
 
 div#menu ul li{
