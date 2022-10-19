@@ -34,3 +34,9 @@ div#menu ul li a{
     color: white;
     text-decoration: none;
 }
+
+div#menu ul li a:hover{
+    
+    text-decoration: none;
+}
+
