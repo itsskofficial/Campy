@@ -1,9 +1,9 @@
-nav#navbar {
+nav#navbar{
     background-color: black;
     padding: 20px;
 }
 
-nav#navbar ul {
+nav#navbar ul{
     display: flex;
     list-style-type: none;
 }
@@ -13,5 +13,21 @@ nav#navbar ul li{
 }
 
 nav#navbar ul li a{
-
+    <ul>
+        <li>
+            <a href="/">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="/campgrounds">
+                All Campgrounds
+            </a>
+        </li>
+        <li>
+            <a href="/campgrounds/new">
+                New Campground
+            </a>
+        </li>
+    </ul>
 }
