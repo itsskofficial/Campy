@@ -12,7 +12,9 @@ div#logo img{
     height: 50px;
 }
 
-div
+div#menu{
+    align-items: flex-end;
+}
 
 div#menu ul{
     display: flex;
