@@ -18,7 +18,7 @@ div#logo img{
 
 div#menu{
     width: 50%;
-    align-items: flex-end;
+    align-items: right;
 }
 
 div#menu ul{
