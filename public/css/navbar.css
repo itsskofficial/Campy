@@ -3,12 +3,12 @@ nav#navbar{
     padding: 20px;
 }
 
-div#navbar ul{
+div#menu ul{
     display: flex;
     list-style-type: none;
 }
 
-nav#navbar ul li{
+div#menu ul li{
     margin: 15px;
 }
 
