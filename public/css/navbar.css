@@ -6,6 +6,7 @@ nav#navbar{
 div#logo img{
     height: 20px;
 }
+
 div#menu ul{
     display: flex;
     list-style-type: none;
