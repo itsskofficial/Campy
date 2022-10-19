@@ -7,6 +7,10 @@ div#navbar-container{
     display: flex;
 }
 
+div#logo{
+    width: 50%;
+}
+
 div#logo img{
     margin: 15px;
     height: 50px;
