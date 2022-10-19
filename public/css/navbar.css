@@ -13,6 +13,7 @@ div#logo img{
 }
 
 div#menu{
+    width: 50%;
     align-items: flex-end;
 }
 
