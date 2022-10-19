@@ -6,6 +6,9 @@ nav#navbar {
 nav#navbar ul {
     display: flex;
     list-style-type: none;
-    
+}
+
+nav#navbar ul li {
+    margin: ;
 }
 
