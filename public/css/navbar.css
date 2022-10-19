@@ -30,9 +30,6 @@ div#menu ul li{
     margin: 15px;
 }
 
-div#menu ul li:hover{
-    margin:30px;
-}
 
 div#menu ul li a{
     color: white;
