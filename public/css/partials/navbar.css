@@ -41,7 +41,7 @@ div#menu ul li a{
 
 div#menu ul li a:hover{
     font-weight: bold;
-    text-decoration: ;
+    text-decoration: underline;
 }
 
 .sticky{
