@@ -32,8 +32,7 @@
 }
 
 #name,#location,#price,#description{
-    margin-top: 20px;
-    
+    margin-top: 20px;   
 }
 
 #new-campground-button{
