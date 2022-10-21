@@ -37,6 +37,7 @@ div#menu ul li a{
     color: white;
     text-decoration: none;
     font-family: 'Crimson Pro',sans-serif;
+    background-color: white;
 }
 
 div#menu ul li a:hover{
