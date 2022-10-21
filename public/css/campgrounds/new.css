@@ -37,6 +37,7 @@
     margin-top: 20px;   
 }
 #price-box{
+    margin-top: 20px;
     display: flex;
 }
 #price-box span{
