@@ -14,6 +14,7 @@
     font-family: 'Quicksand',sans-serif;
     font-size: medium;
     font-weight: 600;
+    text-align: left;
 }
 
 #name,#location,#price,#description{
