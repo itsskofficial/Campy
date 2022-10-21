@@ -2,7 +2,7 @@
     margin-top: 150px;
     align-items: center;
     justify-content: center;
-    di
+    display: flex;
 }
 
 #new-campground{
