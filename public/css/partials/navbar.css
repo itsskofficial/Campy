@@ -2,11 +2,11 @@ nav#navbar{
     background-color: black;
     padding: 10px;
     overflow: hidden;
-    margin-right: 20px;
 }
 
 div#navbar-container{
     display: flex;
+    margin-right: 20px;
 }
 
 div#logo{
