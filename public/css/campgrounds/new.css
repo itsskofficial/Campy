@@ -1,7 +1,7 @@
 #container{
     margin-top: 50px;
-    display: flex
-    fle;
+    display: flex;
+    flex-direction: column;
 }
 
 #title{
