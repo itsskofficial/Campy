@@ -30,19 +30,19 @@
 }
 
 #campground-price{
-    margin-top: 50px;
+    margin-top: 55px;
     font-family: 'Crimson Pro', sans-serif;
     font-weight: 300;
 }
 
 #campground-description{
-    margin-top: 50px;
+    margin-top: 55px;
     font-family: 'Quicksand',sans-serif;
     font-weight: 300;
 }
 
 #campground-button{
-    margin-top: 50px;
+    margin-top: 55px;
     padding: 10px;
     background-color: black;
     color: white;
