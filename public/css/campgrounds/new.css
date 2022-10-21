@@ -3,5 +3,5 @@
 }
 
 #new-campground{
-    display: inline;
+    display:flexbox;
 }
