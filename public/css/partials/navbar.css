@@ -43,6 +43,7 @@ div#menu ul li a{
     background-position-y: 100%;
     background-size: 0% 0.1em;
     transition: background-size 0.2s ease-in-out;
+    font-size: 10px;
 }
 
 div#menu ul li a:hover{
