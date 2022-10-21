@@ -1,6 +1,7 @@
 #container{
     margin-top: 150px;
     align-items: center;
+    width: 70%;
 }
 
 #new-campground{
