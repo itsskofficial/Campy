@@ -32,7 +32,7 @@
     text-align: left;
 }
 
-#name,#location,#description{
+#name,#location,#image,#description{
     margin-top: 20px;   
 }
 #price-box{
