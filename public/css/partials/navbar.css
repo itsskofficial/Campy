@@ -38,7 +38,8 @@ div#menu ul li a{
     text-decoration: none;
     font-family: 'Crimson Pro',sans-serif;
     background-color: white;
-    background
+    background-repeat: no-repeat;
+    background-position-x: ;
 }
 
 div#menu ul li a:hover{
