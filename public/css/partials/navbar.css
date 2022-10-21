@@ -41,7 +41,7 @@ div#menu ul li a{
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 100%;
-    background-size: 10px;
+    background-size: 1px;
 }
 
 div#menu ul li a:hover{
