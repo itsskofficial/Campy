@@ -4,7 +4,7 @@
     </h1>
     <h2>
         <div class="campgrounds" id="campgrounds">
-            
+
         </div>
             <% for (let campground of campgrounds){  %>
                 <div id="campground-card" class="campground-card">
@@ -26,8 +26,6 @@
                         </button>
                     </div>     
                 </div>
-                <li><a href="campgrounds/<%= campground.id %> "><%= campground.name %></a></li>
                 <% } %>  
-        </ul>
     </h2>
     <h3><a href="/campgrounds/new">Make new campground</a></h3>
