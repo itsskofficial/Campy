@@ -40,7 +40,7 @@ seedDB().then(() => {
     mongoose.connection.close()
 })
 
-seedDB.catch(() => {
+seedDB().catch(() => {
 })
 
 console.log("Database connectivity")
