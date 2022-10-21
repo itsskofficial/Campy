@@ -42,7 +42,7 @@
 #price-box span{
     background-color: black;
     color: white;
-    font-size: m;
+    padding: 10px;
 }
 
 #new-campground-button{
