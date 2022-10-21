@@ -4,5 +4,5 @@
 
 #new-campground{
     display:flex;
-    flex-direction: ;
+    flex-direction: column;
 }
