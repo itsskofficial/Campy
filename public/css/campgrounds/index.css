@@ -52,5 +52,6 @@
 
 #campground-button:hover{
     color: black;
-    background-color: ;
+    background-color: white;
+    border: 5px;
 }
