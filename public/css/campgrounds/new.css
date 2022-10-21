@@ -39,6 +39,8 @@
 
 #price-box span{
     background-color: black;
+    color: white;
+    font-size: m;
 }
 
 #new-campground-button{
