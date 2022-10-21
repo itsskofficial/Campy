@@ -48,7 +48,7 @@ div#menu ul li a{
 div#menu ul li a:hover{
     font-weight: bold;
     background-position-x:0% ;
-    background-size: 100%;
+    background-size: 100% 0.5em;
 }
 
 .sticky{
