@@ -2,7 +2,7 @@ footer#footer{
     display: block;
     background-color: black;
     padding: 20px;
-    position: fixed;
+    position: absolute;
 }
 
 div#footer-container{
