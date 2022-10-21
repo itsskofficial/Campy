@@ -41,14 +41,14 @@ div#menu ul li a{
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 100%;
-    background-size: 0%;
+    background-size: 0% 0.1;
     transition: background-size 0.2s ease-in-out;
 }
 
 div#menu ul li a:hover{
     font-weight: bold;
     background-position-x:0%;
-    background-size: 5%;
+    background-size: 100%;
 }
 
 .sticky{
