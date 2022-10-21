@@ -24,16 +24,16 @@
     width: 50%;
 }
 
-#campground-body #campground-name{
+#campground-name{
     font-family: 'Montserrat',sans-serif;
 }
 
-#campground-body #campground-price{
+#campground-price{
     font-family: 'Crimson Pro', sans-serif;
     font-weight: 300;
 }
 
-#campground-body #campground-description{
+#campground-description{
     font-family: 'Quicksand',sans-serif;
     font-weight: 300;
 }
