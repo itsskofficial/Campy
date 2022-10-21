@@ -36,7 +36,9 @@
 #name,#location,#price,#description{
     margin-top: 20px;   
 }
-
+#price-box{
+    display: flex;
+}
 #price-box span{
     background-color: black;
     color: white;
