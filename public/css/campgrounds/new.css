@@ -2,13 +2,14 @@
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-    display: flex;
+
 }
 
 #new-campground{
     display:flex;
     flex-direction: column;
     width: 50%;
+    align-items: center;
 }
 
 #input-label{
