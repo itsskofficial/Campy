@@ -3,11 +3,11 @@
 }
 
 #campgrounds{
-    
+    display: flexbox;
 }
 
 #campground-card{
     display:flex;
-    
+
 }
 
