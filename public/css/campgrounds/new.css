@@ -2,7 +2,8 @@
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    <button>Add new campground</button>
+    display: flex;
+    flex-direction: column;
 }
 
 #title{
