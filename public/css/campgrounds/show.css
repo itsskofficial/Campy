@@ -43,6 +43,7 @@
 #show-campground-description{
     margin-top: 20px;
     font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 #show-edit-campground-button{
