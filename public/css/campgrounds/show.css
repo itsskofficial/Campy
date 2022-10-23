@@ -63,7 +63,7 @@
     background-color: black;
     color: white;
     padding: 10px;
-    isplay: inline;
+    display: inline;
 }
 
 #show-delete-campground-button:hover{
