@@ -65,3 +65,7 @@
     width: 30%;
     align-self: center;
 }
+
+#edit-campground-button:hover{
+    cursor: pointer;
+}
