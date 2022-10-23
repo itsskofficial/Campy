@@ -13,5 +13,6 @@
 }
 
 #show-campground-body{
+    display: flex;
     
 }
