@@ -3,7 +3,7 @@
     margin-right: 20px;
 }
 
-#campground-card{
+#show-campground-card{
     display: flex;
     flex-direction: column;
 }
