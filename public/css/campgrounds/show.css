@@ -34,10 +34,12 @@
 }
 
 #show-campground-price{
+    
     font-family: 'Crimson Pro', sans-serif;
 }
 
 #show-campground-description{
+    margin-top: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
