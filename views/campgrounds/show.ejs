@@ -13,8 +13,7 @@
         </div>
     </div>
     
-    <img src="<%= campground.image %> ">
-    <h3><%= campground.price %> </h3>
+    
     <p><%= campground.description %> </p>
     <h3><a href="/campgrounds/<%= campground.id %>/edit ">Edit campground</a></h3>
     <form action="/campgrounds/<%= campground.id %>?_method=DELETE" method="POST">
