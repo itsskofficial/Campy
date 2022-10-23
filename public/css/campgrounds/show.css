@@ -60,5 +60,7 @@
 }
 
 #show-delete-campground-button:hover{
-    background-color: ;
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
