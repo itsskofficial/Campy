@@ -54,5 +54,6 @@
 }
 
 #show-delete-campground-button{
-    background-color: whi;
+    background-color: black;
+    color: white;
 }
