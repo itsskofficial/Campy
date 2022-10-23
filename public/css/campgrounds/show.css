@@ -41,9 +41,8 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-#show-campground-edit-button{
+#show-edit-campground-button{
     background-color: black;
     color: white;
     padding: 10px;
-    
 }
