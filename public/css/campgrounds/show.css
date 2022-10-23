@@ -50,7 +50,6 @@
     background-color: black;
     color: white;
     padding: 10px;
-    display: inline;
 }
 
 #show-edit-campground-button:hover{
@@ -64,6 +63,7 @@
     background-color: black;
     color: white;
     padding: 10px;
+    isplay: inline;
 }
 
 #show-delete-campground-button:hover{
