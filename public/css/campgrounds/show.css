@@ -64,6 +64,7 @@
     color: white;
     padding: 10px;
     display: inline;
+    margin-bottom: 50px;
 }
 
 #show-delete-campground-button:hover{
