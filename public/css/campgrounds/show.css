@@ -14,5 +14,5 @@
 
 #show-campground-body{
     display: flex;
-    
+    flex-direction: column;
 }
