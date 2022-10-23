@@ -50,4 +50,5 @@
 #show-edit-campground-button:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
