@@ -1,6 +1,7 @@
     <% layout('layouts/boilerplate') %> 
     <div id="container">
         <h1>
+        </h1>
             <div id="form-container">
                 <form action="/campgrounds/<%= campground.id %>?_method=PUT" method="POST">
                     <label for="name" id="input-label">
@@ -31,7 +32,6 @@
                     </button>
                 </form>
             </div>
-        </h1>
     </div>
     
     <h2><a href="/campgrounds">Show all campgrounds</a></h2>
