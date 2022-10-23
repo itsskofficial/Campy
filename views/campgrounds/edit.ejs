@@ -1,36 +1,36 @@
 <% layout('layouts/boilerplate') %> 
-<div id="container">
-    <h1>
-        Edit Campground
-    </h1>
-    <div id="form-container">
-        <form id="edit-campground" action="/campgrounds/<%= campground.id %>?_method=PUT" method="POST">
-            <label for="name" id="input-label">
-                Enter campground name
-            </label>
-            <input type="text" name="campground[name]" id="name" value = "<%= campground.name %>" >
-            <label for="location" id="input-label">
-                Enter campground location
-            </label>
-            <input type="text" name="campground[location]" id="location" value="<%= campground.location %>" >
-            <label for="price-box" id="input-label">
-                Enter campground price
-            </label>
-            <div id="price-box">
-                <span>$</span>
-                <input type="number" name="campground[price]" id="price" value="<%= campground.price %> ">
-            </div>
-            <label for="image" id="input-label">
-                Upload campground image
-            </label>
-            <input type="text" name="campground[image]" id="image" value="<%= campground.image %> ">
-            <label for="description" id="input-label">
-                Enter campground description
-            </label>
-            <input type="text" name="campground[description]" id="description" value="<%= campground.description %> ">
-            <button id="edit-campground-button">
-                Edit campground
-            </button>
-        </form>
+    <div id="container">
+        <h1>
+            Edit Campground
+        </h1>
+        <div id="form-container">
+            <form id="edit-campground" action="/campgrounds/<%= campground.id %>?_method=PUT" method="POST">
+                <label for="name" id="input-label">
+                    Enter campground name
+                </label>
+                <input type="text" name="campground[name]" id="name" value = "<%= campground.name %>" >
+                <label for="location" id="input-label">
+                    Enter campground location
+                </label>
+                <input type="text" name="campground[location]" id="location" value="<%= campground.location %>" >
+                <label for="price-box" id="input-label">
+                    Enter campground price
+                </label>
+                <div id="price-box">
+                    <span>$</span>
+                    <input type="number" name="campground[price]" id="price" value="<%= campground.price %> ">
+                </div>
+                <label for="image" id="input-label">
+                    Upload campground image
+                </label>
+                <input type="text" name="campground[image]" id="image" value="<%= campground.image %> ">
+                <label for="description" id="input-label">
+                    Enter campground description
+                </label>
+                <input type="text" name="campground[description]" id="description" value="<%= campground.description %> ">
+                <button id="edit-campground-button">
+                    Edit campground
+                </button>
+            </form>
+        </div>
     </div>
-</div>
