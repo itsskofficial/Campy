@@ -35,6 +35,7 @@
 #name,#location,#image,#description{
     margin-top: 20px;   
 }
+
 #price-box{
     margin-top: 20px;
     display: flex;
@@ -51,7 +52,7 @@
     width:100%
 }
 
-#new-campground-button{
+#edit-campground-button{
     margin-top: 50px;
     margin-bottom: 50px;
     padding:10px;
