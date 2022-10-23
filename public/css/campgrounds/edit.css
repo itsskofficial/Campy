@@ -68,5 +68,6 @@
 
 #edit-campground-button:hover{
     cursor: pointer;
-    background-color: ;
+    background-color: white;
+    color: black;
 }
