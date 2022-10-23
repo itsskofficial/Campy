@@ -26,10 +26,12 @@
 }
 
 #show-campground-name{
+    margi
     font-family: 'Montserrat',sans-serif;
 }
 
 #show-campground-location{
+    margin-top: 20px;
     font-family: 'Crimson Pro', sans-serif;
 }
 
