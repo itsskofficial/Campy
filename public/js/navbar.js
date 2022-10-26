@@ -15,4 +15,4 @@ function myFunction() {
   }
 }
 
-// sometimes this 
+// sometimes this navbar doesn't work, debgu
