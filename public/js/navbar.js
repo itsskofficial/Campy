@@ -15,4 +15,4 @@ function myFunction() {
   }
 }
 
-// sometimes this navbar doesn't work, debugging the reason
+// sometimes this navbar doesn't work, still debugging the reason
