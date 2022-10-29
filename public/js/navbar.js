@@ -17,4 +17,3 @@ function myFunction() {
 
 // sometimes this navbar doesn't work, still debugging the reason
 //riding in the north my lord
-// where do we find them my lady
