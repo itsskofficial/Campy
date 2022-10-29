@@ -62,6 +62,7 @@
                         if (!form.checkValidity()){
                             event.preventDefault()
                             event.stopPropagation()
+                            form.classList.add('unvalidated')
                         }
                         form.classList.add('validated')
                     },false)
