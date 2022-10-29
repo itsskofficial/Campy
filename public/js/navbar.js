@@ -14,5 +14,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-// sometimes this navbar doesn't work, still debugging the reason
