@@ -56,7 +56,7 @@
 
             var forms=document.querySelectorAll('.validation')
 
-            Array.form(forms)
+            Array.from(forms)
                 .forEach(function(form){
                     form.addEventListener('submit',function(event){
                         if (!form.checkValidity()){
