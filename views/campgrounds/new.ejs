@@ -64,9 +64,8 @@
                             event.preventDefault()
                             event.stopPropagation()
                             Array.from(inputs).forEach(function(input){
-                                
+                                input.classList.add('unvalidated')
                             })
-                            form.classList.add('unvalidated')
                         }
                         form.classList.add('validated')
                     },false)
