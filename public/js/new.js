@@ -1,6 +1,7 @@
 var forms = document.querySelectorAll('.validation')
-pri
-var inputs=document.querySelectorAll('.input-validation')
+console.log(forms)
+var inputs = document.querySelectorAll('.input-validation')
+console.log(inputs)
 
 Array.from(forms)
     .forEach(function(form){
