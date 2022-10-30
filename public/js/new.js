@@ -1,7 +1,5 @@
 var form = document.querySelector('.new-validation')
-console.log(form)
 var inputs = document.querySelectorAll('.input-validation')
-console.log(inputs)
 var successMsgs=document.querySelectorAll('.validation-msg')
 var errorMsgs = document.querySelectorAll('.unvalidation-msg')
 
