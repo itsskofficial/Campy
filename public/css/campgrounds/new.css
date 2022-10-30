@@ -73,7 +73,9 @@
     border: 1px solid black;
 }
 
-.vai
+.validation-msg{
+    
+}
 
 .validated{
     border: solid 1px green;
