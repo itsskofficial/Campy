@@ -1,10 +1,8 @@
 var form = document.querySelector('.new-validation')
-console.log(forms)
+console.log(form)
 var inputs = document.querySelectorAll('.input-validation')
 console.log(inputs)
 
-Array.from(forms)
-    .forEach(function(form){
         form.addEventListener('submit',function(event){
             if (!form.checkValidity()){
                 event.preventDefault()
