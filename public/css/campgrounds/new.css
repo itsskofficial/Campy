@@ -74,7 +74,7 @@
 }
 
 .validation-msg{
-    
+    display: none;
 }
 
 .validated{
