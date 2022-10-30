@@ -1,4 +1,4 @@
-var form = document.querySelector('new-validation')
+var form = document.querySelector('.new-validation')
 console.log(form)
 var inputs = document.querySelectorAll('.input-validation')
 console.log(inputs)
