@@ -67,7 +67,9 @@
                                 input.classList.add('unvalidated')
                             })
                         }
-                        input.classList.add('validated')
+                        Array.from(inputs).forEach(function(input){
+                                input.classList.add('validated')
+                            })
                     },false)
                 })
             }
