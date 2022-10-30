@@ -15,12 +15,11 @@ form.addEventListener('submit',function(event){
         })
     }
     else {
-        
+        Array.from(inputs).forEach(function(input){
+            input.classList.add('validated')
+        })
+        Array.from(successMsgs).forEach(function (successMsg) {
+            successMsg.style.display="block"
+        })
     }
-    Array.from(inputs).forEach(function(input){
-        input.classList.add('validated')
-    })
-    Array.from(successMsgs).forEach(function (successMsg) {
-        successMsg.style.display="block"
-    })
 },false)
