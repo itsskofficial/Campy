@@ -3,7 +3,8 @@ console.log(form)
 var inputs = document.querySelectorAll('.input-validation')
 console.log(inputs)
 var successMsgs=document.querySelectorAll('.validation-msg')
-var errorMsgs=document.quer
+var errorMsgs = document.querySelectorAll('.unvalidation-msg')
+
 form.addEventListener('submit',function(event){
     if (!form.checkValidity()){
         event.preventDefault()
