@@ -13,7 +13,9 @@ form.addEventListener('submit',function(event){
         })
     }
     Array.from(inputs).forEach(function(input){
-            input.classList.add('validated')
+        input.classList.add('validated')
     })
-    Array.from(msgs)
+    Array.from(msgs).forEach(function (input) {
+        
+    })
 },false)
