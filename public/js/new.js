@@ -10,7 +10,7 @@ form.addEventListener('submit',function(event){
         Array.from(inputs).forEach(function(input){
             input.classList.add('unvalidated')
         })
-        Array.from(errors)
+        Array.from(errorMsgs).forEach(function())
     }
     Array.from(inputs).forEach(function(input){
         input.classList.add('validated')
