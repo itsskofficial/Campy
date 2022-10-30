@@ -1,4 +1,5 @@
-var forms=document.querySelectorAll('.validation')
+var forms = document.querySelectorAll('.validation')
+pri
 var inputs=document.querySelectorAll('.input-validation')
 
 Array.from(forms)
