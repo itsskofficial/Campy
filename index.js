@@ -64,21 +64,17 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
         res.redirect(`campgrounds/${campground.id}`)
 }))
 
-app.put('/campgrounds/:id', async (req, res, next) => {
+app.put('/campgrounds/:id', wrapAsync(async (req, res, next) => {
         const campground = await Campground.findById(req.params.id)
         await campground.update({...req.body.campground })
         res.redirect(`/campgrounds/${campground.id}`)
-})
+}))
 
-app.delete('/campgrounds/:id', async (req, res, next) => {
+app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
     try {
         const campground = await Campground.findById(req.params.id)
         await campground.delete()
         res.redirect('/campgrounds')
-    }
-    catch (e){
-        next(e)
-    }
     
 })
 
