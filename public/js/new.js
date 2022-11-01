@@ -17,7 +17,7 @@ form.addEventListener('submit',function(event){
             }
             var el=document.createElement('h4')
             el.innerHTML = "Something's wrong"
-            insertAfter(input,el)
+            insertAfter(input, el)
         })
         Array.from(errorMsgs).forEach(function (errorMsg) {
             errorMsg.style.display="block"
