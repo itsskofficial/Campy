@@ -5,4 +5,5 @@ class ExpressError extends Error{
         this.statusCode=statusCode
     }
 }
-modu
+
+module.exports=ExpressError
