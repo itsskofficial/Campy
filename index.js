@@ -57,27 +57,17 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
     res.render('campgrounds/edit',{campground})
 })
 
-app.post('/campgrounds', async (req, res, next) => {
-    try {
+app.post('/campgrounds', wrapAsync(async (req, res, next) => {
         console.log(req.body.campground)
         const campground = new Campground(req.body.campground)
         await campground.save()
         res.redirect(`campgrounds/${campground.id}`)
-    }
-    catch (e) {
-        next(e)
-    }
-})
+}))
 
 app.put('/campgrounds/:id', async (req, res, next) => {
-    try {
         const campground = await Campground.findById(req.params.id)
         await campground.update({...req.body.campground })
-        res.redirect(`/campgrounds/${campground.id}`)
-    }
-    catch (e) {
-        next(e)
-    }
+        res.redirect(`/campgrounds/${campground.id}`
     
 })
 
