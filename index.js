@@ -4,7 +4,8 @@ const mongoose = require('mongoose')
 const methodOverride=require('method-override')
 const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
-const wrapAsync=require('./utils/wrapasync')
+const wrapAsync = require('./utils/wrapasync')
+const ExpressError=require('./')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
@@ -85,6 +86,4 @@ app.use((err, req, res, next) => {
 })
 
 app.listen('5500', () => {
-    console.log("App listening on port 5500")
-})
-
+    console.log("App listening on port 5500"
