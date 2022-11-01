@@ -63,7 +63,9 @@ app.post('/campgrounds', async (req, res, next) => {
         await campground.save()
         res.redirect(`campgrounds/${campground.id}`)
     }
-    catch(e)
+    catch (e) {
+        next(e)
+    }
 })
 
 app.put('/campgrounds/:id', async (req, res) => {
