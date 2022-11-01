@@ -44,6 +44,9 @@ const validateCampground = (req, res, next) => {
         const msg=error.details.map(el=>el.message).join(',')
         throw new ExpressError(msg,400)
     }
+    else{
+        
+    }
 }
 
 app.get('/makecampground', async (req, res) => {
