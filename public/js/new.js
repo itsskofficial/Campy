@@ -14,7 +14,7 @@ form.addEventListener('submit',function(event){
         Array.from(inputs).forEach(function(input){
             if (!input.checkValidity()) {
                 input.classList.add('unvalidated')
-                
+                var el=input.nextSibling()
             }
             var el=document.createElement('h4')
             el.innerHTML = "Something's wrong"
