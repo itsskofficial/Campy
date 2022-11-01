@@ -15,8 +15,8 @@ form.addEventListener('submit',function(event){
             if (!input.checkValidity()) {
                 input.classList.add('unvalidated')
                 var el = input.nextElementSibling()
-                
                 el.innerHTML = "Something's wrong"
+                el.style.display="block"
             }
             else {
                 input.classsList.add('validated')
