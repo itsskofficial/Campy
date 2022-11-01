@@ -60,9 +60,9 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
 })
 
 app.post('/campgrounds', wrapAsync(async (req, res, next) => {
-    const campgroundSchemda = Joi.object(
+    const campgroundSchemda = Joi.object({
         
-    )
+    })
     const campground = new Campground(req.body.campground)
     await campground.save()
     res.redirect(`campgrounds/${campground.id}`)
