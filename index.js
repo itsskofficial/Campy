@@ -76,6 +76,10 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
         res.redirect('/campgrounds')
 }))
 
+app.all('*', (req, res, next) = {
+    res.
+})
+
 app.use((err, req, res, next)=> {
     res.send("Something went wrong") 
 })
