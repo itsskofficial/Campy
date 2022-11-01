@@ -60,7 +60,7 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
 })
 
 app.post('/campgrounds', wrapAsync(async (req, res, next) => {
-    const campgroundSchemda = Joi.object({
+    const campgroundSchema = Joi.object({
         campground: Joi.object({
             title: Joi.string.required(),
             price: Joi.number.required().min(0),
@@ -68,6 +68,7 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
             image:Joi.string.required()
         }).required()
     })
+    const result=campgroundSchema.validate()
     const campground = new Campground(req.body.campground)
     await campground.save()
     res.redirect(`campgrounds/${campground.id}`)
