@@ -70,7 +70,7 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
     })
     const { error } = campgroundSchema.validate(req.body)
     if (error) {
-        const {}
+        const msg=error.details.map(el=>e)
         throw new ExpressError(result.error.details,400)
     }
     console.log(result)
