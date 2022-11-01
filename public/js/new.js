@@ -16,6 +16,7 @@ form.addEventListener('submit',function(event){
                 input.classList.add('unvalidated')
             }
             var el=document.createElement('h4')
+            el.innerHTML="Something's wrong"
         })
         Array.from(errorMsgs).forEach(function (errorMsg) {
             errorMsg.style.display="block"
