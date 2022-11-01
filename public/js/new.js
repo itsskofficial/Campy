@@ -19,7 +19,7 @@ form.addEventListener('submit',function(event){
                 el.style.display="block"
             }
             else {
-                input.classsList.add('validated')
+                input.classList.add('validated')
                 var el = input.nextElementSibling
                 el.style.display="block"
             }
