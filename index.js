@@ -68,7 +68,7 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
             image:Joi.string.required()
         }).required()
     })
-    const result=campgroundSchema.validate()
+    const result=campgroundSchema.validate(req.body)
     console.log(result)
     const campground = new Campground(req.body.campground)
     await campground.save()
