@@ -78,7 +78,7 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
 }))
 
 app.all('*', (req, res, next) => {
-    next(new ExpressError(res.send("404 Error")
+    next(new ExpressError("Page not found",404)res.send("404 Error")
 })
 
 app.use((err, req, res, next) => {
