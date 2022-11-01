@@ -19,9 +19,6 @@ form.addEventListener('submit',function(event){
             el.innerHTML = "Something's wrong"
             insertAfter(input, el)
         })
-        Array.from(errorMsgs).forEach(function (errorMsg) {
-            errorMsg.style.display="block"
-        })
     }
     else {
         Array.from(inputs).forEach(function(input){
