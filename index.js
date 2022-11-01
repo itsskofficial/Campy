@@ -76,7 +76,7 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
     res.render('campgrounds/edit',{campground})
 })
 
-app.post('/campgrounds',valida wrapAsync(async (req, res, next) => {
+app.post('/campgrounds',validateCampground, wrapAsync(async (req, res, next) => {
     const campground = new Campground(req.body.campground)
     await campground.save()
     res.redirect(`campgrounds/${campground.id}`)
