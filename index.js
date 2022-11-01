@@ -30,15 +30,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 const validateCampground = (req, res, next) => {
-    const campgroundSchema = Joi.object({
-        campground: Joi.object({
-            title: Joi.string().required(),
-            price: Joi.number().required().min(0),
-            description: Joi.string().required(),
-            image: Joi.string().required(),
-            location: Joi.string().required()
-        }).required()
-    })
+    campgroundS
     const { error } = campgroundSchema.validate(req.body)
     if (error) {
         const msg=error.details.map(el=>el.message).join(',')
