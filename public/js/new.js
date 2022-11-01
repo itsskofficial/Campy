@@ -19,6 +19,8 @@ form.addEventListener('submit',function(event){
             }
             else {
                 input.classsList.add('validated')
+                var el = input.nextElementSibling()
+                el.innerHTML="Looks good"
             }
         })
     }
