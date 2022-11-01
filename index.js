@@ -56,11 +56,14 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
     res.render('campgrounds/edit',{campground})
 })
 
-app.post('/campgrounds', async (req, res,next) => {
-    console.log(req.body.campground)
-    const campground = new Campground(req.body.campground)
-    await campground.save()
-    res.redirect(`campgrounds/${campground.id}`)
+app.post('/campgrounds', async (req, res, next) => {
+    try {
+        console.log(req.body.campground)
+        const campground = new Campground(req.body.campground)
+        await campground.save()
+        res.redirect(`campgrounds/${campground.id}`)
+    }
+    catch(e)
 })
 
 app.put('/campgrounds/:id', async (req, res) => {
