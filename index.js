@@ -80,10 +80,13 @@ app.put('/campgrounds/:id', async (req, res, next) => {
     
 })
 
-app.delete('/campgrounds/:id', async(req, res)=> {
-    const campground = await Campground.findById(req.params.id)
+app.delete('/campgrounds/:id', async (req, res, next) => {
+    try {
+        const campground = await Campground.findById(req.params.id)
     await campground.delete()
     res.redirect('/campgrounds')
+    }
+    
 })
 
 app.use((err, req, res, next)=> {
