@@ -59,7 +59,7 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
 })
 
 app.post('/campgrounds', wrapAsync(async (req, res, next) => {
-        console.log(req.body.campground)
+        if(!req.body.campground)
         const campground = new Campground(req.body.campground)
         await campground.save()
         res.redirect(`campgrounds/${campground.id}`)
