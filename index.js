@@ -6,7 +6,6 @@ const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
 const wrapAsync = require('./utils/wrapasync')
 const ExpressError = require('./utils/expresserror')
-const Joi=require('joi')
 const campgroundSchema = require('./schemas')
 
 const app = express()
