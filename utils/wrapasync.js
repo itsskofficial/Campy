@@ -1,6 +1,6 @@
 module.exports = function => {
     return (req, res, next)=>{
-        function(req, res, next).catch (
+        function(req, res, next).catch(next)
         
         )
     }
