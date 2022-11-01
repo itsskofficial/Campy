@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const methodOverride=require('method-override')
 const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
+const wrapAsync=require('./utils/wrapasync')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
