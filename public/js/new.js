@@ -3,6 +3,10 @@ var inputs = document.querySelectorAll('.input-validation')
 var successMsgs=document.querySelectorAll('.validation-msg')
 var errorMsgs = document.querySelectorAll('.unvalidation-msg')
 
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+  }
+
 form.addEventListener('submit',function(event){
     if (!form.checkValidity()){
         event.preventDefault()
