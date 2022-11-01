@@ -7,6 +7,7 @@ const Campground = require('./models/campground')
 const wrapAsync = require('./utils/wrapasync')
 const ExpressError = require('./utils/expresserror')
 const Joi=require('joi')
+const campgroundSchema = require('./schemas')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
@@ -30,7 +31,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 const validateCampground = (req, res, next) => {
-    campgroundS
+    campgroundSchema()
     const { error } = campgroundSchema.validate(req.body)
     if (error) {
         const msg=error.details.map(el=>el.message).join(',')
