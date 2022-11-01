@@ -76,8 +76,8 @@ app.delete('/campgrounds/:id', async(req, res)=> {
 })
 
 app.use((err, req, res, next)=> {
-    
-}
+    res.send("Something went wrong") 
+})
 
 app.listen('5500', () => {
     console.log("App listening on port 5500")
