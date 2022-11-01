@@ -75,7 +75,7 @@ app.delete('/campgrounds/:id', async(req, res)=> {
     res.redirect('/campgrounds')
 })
 
-app.use(err, req, res, next)=> {
+app.use((err, req, res, next)=> {
     
 }
 
