@@ -1,7 +1,6 @@
-module.exports = function => {
+module.exports = func => {
     return (req, res, next)=>{
-        function(req, res, next).catch(next)
-        
+        func(req, res, next).catch(next)
         )
     }
 }
