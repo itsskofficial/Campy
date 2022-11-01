@@ -62,8 +62,8 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
 app.post('/campgrounds', wrapAsync(async (req, res, next) => {
     const campgroundSchemda = Joi.object({
         campground: Joi.object({
-            title: Joi.string,
-            price: Joi.number,
+            title: Joi.string.required(),
+            price: Joi.number.required(),
             description: Joi.string,
             image:Joi.string
         }).required()
