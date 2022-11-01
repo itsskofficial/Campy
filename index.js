@@ -64,7 +64,8 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
         campground: Joi.object({
             title: Joi.string,
             price: Joi.number
-            des
+            description: Joi.string,
+            image:
         }).required()
     })
     const campground = new Campground(req.body.campground)
