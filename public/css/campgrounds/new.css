@@ -85,6 +85,6 @@
     border: solid 1px red;
 }
 
-div h4#validation-msg{
+div h4.validation-msg{
     margin-left: 10px;
 }
