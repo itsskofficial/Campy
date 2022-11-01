@@ -71,12 +71,10 @@ app.put('/campgrounds/:id', wrapAsync(async (req, res, next) => {
 }))
 
 app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
-    try {
         const campground = await Campground.findById(req.params.id)
         await campground.delete()
         res.redirect('/campgrounds')
-    
-})
+}))
 
 app.use((err, req, res, next)=> {
     res.send("Something went wrong") 
