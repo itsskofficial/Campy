@@ -75,6 +75,8 @@ app.delete('/campgrounds/:id', async(req, res)=> {
     res.redirect('/campgrounds')
 })
 
+app.use()
+
 app.listen('5500', () => {
     console.log("App listening on port 5500")
 })
