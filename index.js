@@ -67,8 +67,7 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
 app.put('/campgrounds/:id', async (req, res, next) => {
         const campground = await Campground.findById(req.params.id)
         await campground.update({...req.body.campground })
-        res.redirect(`/campgrounds/${campground.id}`
-    
+        res.redirect(`/campgrounds/${campground.id}`)
 })
 
 app.delete('/campgrounds/:id', async (req, res, next) => {
