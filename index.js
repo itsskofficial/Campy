@@ -82,6 +82,8 @@ app.all('*', (req, res, next) => {
 })
 
 app.use((err, req, res, next) => {
+    const { statusCode, message } = err
+    res.status(statusCode)
     res.send("Something went wrong") 
 })
 
