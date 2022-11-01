@@ -8,7 +8,9 @@ form.addEventListener('submit',function(event){
         event.preventDefault()
         event.stopPropagation()
         Array.from(inputs).forEach(function(input){
-            input.classList.add('unvalidated')
+            if (!input.checkValidity()) {
+                input.classList.add('unvalidated')
+            }
         })
         Array.from(errorMsgs).forEach(function (errorMsg) {
             errorMsg.style.display="block"
