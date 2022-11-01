@@ -68,7 +68,7 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
             image: Joi.string().required()
         }).required()
     })
-    const { error } =campgroundSchema.validate(req.body)
+    const { error } = campgroundSchema.validate(req.body)
     if (result.error) {
         throw new ExpressError(result.error.details,400)
     }
