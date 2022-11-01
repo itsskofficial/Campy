@@ -18,7 +18,7 @@ form.addEventListener('submit',function(event){
                 el.innerHTML = "Something's wrong"
             }
             else {
-                in
+                input.classsList.add('validated')
             }
         })
     }
