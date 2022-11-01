@@ -56,7 +56,7 @@ app.get('/campgrounds/:id/edit', async (req, res) => {
     res.render('campgrounds/edit',{campground})
 })
 
-app.post('/campgrounds', async (req, res) => {
+app.post('/campgrounds', async (req, res,next) => {
     console.log(req.body.campground)
     const campground = new Campground(req.body.campground)
     await campground.save()
