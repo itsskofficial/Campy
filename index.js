@@ -65,7 +65,8 @@ app.post('/campgrounds', wrapAsync(async (req, res, next) => {
             title: Joi.string().required(),
             price: Joi.number().required().min(0),
             description: Joi.string().required(),
-            image: Joi.string().required()
+            image: Joi.string().required(),
+            location: Joi.string().required()
         }).required()
     })
     const { error } = campgroundSchema.validate(req.body)
