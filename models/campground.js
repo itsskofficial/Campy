@@ -10,7 +10,8 @@ const CampgroundSchema = new mongoose.Schema({
     location: String
     reviews=[
         {
-            type:mongoose.Schema.T
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'Review'
         }
         
     ]
