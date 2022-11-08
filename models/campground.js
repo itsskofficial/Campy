@@ -10,7 +10,7 @@ const CampgroundSchema = new mongoose.Schema({
     location: String
     reviews=[
         {
-            
+            type:
         }
         
     ]
