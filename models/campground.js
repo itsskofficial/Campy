@@ -10,8 +10,10 @@ const CampgroundSchema = new mongoose.Schema({
     location: String
     reviews=[
         {
-
-    }]
+            
+        }
+        
+    ]
 })
 
 module.exports = mongoose.model('Campground', CampgroundSchema)
