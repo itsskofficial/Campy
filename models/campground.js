@@ -1,9 +1,8 @@
 const mongoose = require('mongoose')
 const 
 
-const Schema = mongoose.Schema
 
-const CampgroundSchema = new Schema({
+const CampgroundSchema = new mongoose.Schema({
     name: String,
     image: String,
     price: Number,
