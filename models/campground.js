@@ -8,6 +8,9 @@ const CampgroundSchema = new mongoose.Schema({
     price: Number,
     description: String,
     location: String
+    reviews=[{
+        
+    }]
 })
 
 module.exports = mongoose.model('Campground', CampgroundSchema)
