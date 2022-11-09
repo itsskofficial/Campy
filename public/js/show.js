@@ -1,2 +1,2 @@
 var form = document.getElementById('new-review')
-var textarea
+var textarea = document.getElementById('')
