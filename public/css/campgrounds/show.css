@@ -87,7 +87,8 @@
 
 #review-rating-label{
     font-family: 'Quicksand', sans-serif;
-    font-weight:600
+    font-weight:600;
+    margin-top: 20px;
 }
 
 #review-rating{
