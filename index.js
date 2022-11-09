@@ -89,7 +89,7 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
         res.redirect('/campgrounds')
 }))
 
-app.post('/campground/:id/reviews', wrapAsync(async (req, res, next) => {
+app.post('/campgrounds/:id/reviews', wrapAsync(async (req, res, next) => {
     const campground= await Campground.findById(req.params.id)
     const review = new Review(req.body.review)
     campground.reviews.push(review)
