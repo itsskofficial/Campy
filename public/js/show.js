@@ -9,6 +9,6 @@ form.addEventListener('submit', function (event){
     if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
-        textarea.classList.add()
+        textarea.classList.add('unvalidated')
     }
 })
