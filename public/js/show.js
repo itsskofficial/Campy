@@ -14,4 +14,7 @@ form.addEventListener('submit', function (event){
         el.innerHTML = "Something's wrong"
         el.style.display="block"
     }
+    else {
+        
+    }
 })
