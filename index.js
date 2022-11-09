@@ -88,6 +88,8 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
         res.redirect('/campgrounds')
 }))
 
+app.post('/campgrounds')
+
 app.all('*', (req, res, next) => {
     next(new ExpressError("Page not found",404))
 })
