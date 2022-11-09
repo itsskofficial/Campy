@@ -15,6 +15,8 @@ form.addEventListener('submit', function (event){
         el.style.display="block"
     }
     else {
-        
+        textarea.classList.add('validated')
+        var el = textarea.nextElementSibling()
+        el.style.display='block'
     }
 })
