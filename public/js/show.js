@@ -11,6 +11,6 @@ form.addEventListener('submit', function (event){
         event.stopPropagation()
         textarea.classList.add('unvalidated')
         var el = textarea.nextElementSibling()
-        el.innerHtml
+        el.innerHTML="Something's wron"
     }
 })
