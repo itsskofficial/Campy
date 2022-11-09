@@ -121,4 +121,7 @@
     padding: 10px;
 }
 
-#submit-review:ho
+#submit-review:hover{
+    background-color: white;
+    
+}
