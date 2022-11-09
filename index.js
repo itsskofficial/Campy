@@ -95,7 +95,7 @@ app.post('/campgrounds/:id/reviews', wrapAsync(async (req, res, next) => {
     campground.reviews.push(review)
     await review.save()
     await campground.save()
-    res.redirect(`/campground/${campground.id}`)
+    res.redirect(`/campgrounds/${campground.id}`)
 }))
 
 app.all('*', (req, res, next) => {
