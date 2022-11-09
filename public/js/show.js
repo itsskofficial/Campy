@@ -19,4 +19,4 @@ form.addEventListener('submit', function (event){
         var el = textarea.nextElementSibling()
         el.style.display='block'
     }
-})
+},false)
