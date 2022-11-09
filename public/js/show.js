@@ -6,5 +6,7 @@ function insertAfter(referenceNode, newNode) {
   }
 
 form.addEventListener('submit', function (event){
-    
-}))
+    if (!form.checkValidity) {
+        
+    }
+})
