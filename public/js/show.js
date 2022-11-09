@@ -5,6 +5,6 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
   }
 
-form.addEventListener('submit', function ({
+form.addEventListener('submit', function (event){
     
 }))
