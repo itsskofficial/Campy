@@ -96,7 +96,7 @@
     font-family: 'Quicksand', sans-serif;
     font-weight:600;
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #review-rating{
@@ -107,7 +107,7 @@
     margin-top: 20px;
     font-family: 'Quicksand',sans-serif;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
 }
 
 #review-body{
