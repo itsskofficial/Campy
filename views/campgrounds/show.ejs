@@ -28,6 +28,18 @@
             </div>
             <div id="show-campground-review">
                 <form action="/campgrounds/<%= campground.id %>/reviews?" method="POST">
+                    <h2 id="review-title">
+                        Write a review
+                    </h2>
+                    <label id="review-rating-label" for="review-rating">
+                        Rating
+                    </label>
+                    <input type="range" id="review-rating" name="review[rating]" min="1" max="5">
+                    <label for="review-body" id="review-body-label">
+                        Body
+                    </label>
+                    <textarea rows="15" cols="75" name="review[body]" id="review-body">
+                    </textarea>
                 </form>
             </div>
         </div>
