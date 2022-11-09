@@ -1,5 +1,5 @@
-var form = document.querySelector('new-review')
-var textarea = document.querySelector('review-body')
+var form = document.querySelector('.new-review')
+var textarea = document.querySelector('.review-body')
 
 function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
