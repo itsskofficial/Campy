@@ -10,6 +10,7 @@ form.addEventListener('submit', function (event){
         event.preventDefault()
         event.stopPropagation()
         textarea.classList.add('unvalidated')
-        var el=element.nextSibling()
+        var el = textarea.nextElementSibling()
+        e
     }
 })
