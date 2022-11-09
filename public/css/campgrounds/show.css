@@ -83,8 +83,10 @@
 }
 
 #new-review{
-    
+    display: flex;
+    flex-direction: column;
 }
+
 #review-title{
     font-family: 'Crimson Pro',sans-serif;
     text-align: center;
