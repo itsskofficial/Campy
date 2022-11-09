@@ -76,7 +76,8 @@
 }
 
 #show-campground-review{
-    fle
+    display: flex;
+    flex-direction: column;
 }
 
 #review-title{
