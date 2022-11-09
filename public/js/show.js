@@ -1,2 +1,3 @@
 var form = document.getElementById('new-review')
-var textarea = document.getElementById('')
+var textarea = document.getElementById('review-body')
+
