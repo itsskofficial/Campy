@@ -89,7 +89,7 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
 }))
 
 app.post('/campgrounds/:id/reviews', wrapAsync(async (req, res, next) => {
-    
+    const campground=
 }))
 
 app.all('*', (req, res, next) => {
