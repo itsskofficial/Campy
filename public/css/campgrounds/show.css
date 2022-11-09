@@ -133,7 +133,7 @@
     display: none;
 }
 
-#validated{
+.validated{
     border: solid 1px green;
 }
 
