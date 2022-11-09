@@ -89,7 +89,7 @@ app.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
 }))
 
 app.post('/campgrounds/:id/reviews', wrapAsync(async (req, res, next) => {
-    const campground=
+    const campground= await Campground.findById(req.params.id)
 }))
 
 app.all('*', (req, res, next) => {
@@ -102,6 +102,4 @@ app.use((err, req, res, next) => {
 })
 
 app.listen('5500', () => {
-    console.log("App listening on port 5500")
-})
-
+    console.log("App listening on port 5500")
