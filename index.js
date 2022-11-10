@@ -110,8 +110,9 @@ app.post('/campgrounds/:id/reviews', validateReview,wrapAsync(async (req, res, n
 }))
 
 app.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req, res, next) => {
-    await Review.findByIdAndDelete(req.params.id)
+    await Review.findByIdAndDelete(req.params.reviewId)
     
+
 }))
 
 app.all('*', (req, res, next) => {
