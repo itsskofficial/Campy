@@ -140,3 +140,7 @@
 .unvalidated{
     border: solid 1px red;
 }
+
+#rating{
+    font-family: '';
+}
