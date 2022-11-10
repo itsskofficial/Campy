@@ -45,7 +45,7 @@ const validateCampground = (req, res, next) => {
 const validateReview = (req, res, next) => {
     const { error } = reviewSchema.validate(req.body)
     if (error) {
-        const msg = error.details.map(el=>el.message)
+        const msg = error.details.map(el=>el.message).join(',')
     }
 }
 app.get('/makecampground', async (req, res) => {
