@@ -57,7 +57,7 @@
                         Review:<%= review.body %> 
                     </p>
                     <form action="/campgrounds/<%= campground.id %>/reviews/<%= review.id %>?_method=DELETE" method="post">
-                        <button id="delete-review-button" class="delete-review-buttonn">
+                        <button id="delete-review-button" class="delete-review-button" type="submit">
                             Delete Review
                         </button>
                     </form>
