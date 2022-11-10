@@ -43,7 +43,8 @@ const validateCampground = (req, res, next) => {
 }
 
 const validateReview = (req, res, next) => {
-    const { error } 
+    const { error } = reviewSchema.validate(req.body)
+    if (error)
 }
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
