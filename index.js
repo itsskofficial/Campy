@@ -109,7 +109,7 @@ app.post('/campgrounds/:id/reviews', validateReview,wrapAsync(async (req, res, n
     res.redirect(`/campgrounds/${campground.id}`)
 }))
 
-app.delete('/campgrounds/:campId/reviews/:reviewId', arap)
+app.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req,res,next)))
 
 app.all('*', (req, res, next) => {
     next(new ExpressError("Page not found",404))
