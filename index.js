@@ -42,7 +42,9 @@ const validateCampground = (req, res, next) => {
     }
 }
 
-const validate
+const validateReview = (req, res, next) => {
+    const { error }
+}
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
     const camp = new Campground({ title: "Camp", description: "Our first camping ground"})
