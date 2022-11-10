@@ -56,7 +56,7 @@
                     <p id="body">
                         Review:<%= review.body %> 
                     </p>
-                    <form action="/campgrounds/<%= campground.id %>/reviews/<%= review.id %>">
+                    <form action="/campgrounds/<%= campground.id %>/reviews/<%= review.id %>?_method">
                         <button id="delete-review-button" class="delete-review-buttonn">
                             Delete Review
                         </button>
