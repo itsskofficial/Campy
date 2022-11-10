@@ -147,5 +147,6 @@
 }
 
 #body{
-    font-family: 'Crimson Pro';
+    font-family: 'Crimson Pro', sans-serif;
+    font-weight: 600;
 }
