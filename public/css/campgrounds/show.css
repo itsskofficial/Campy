@@ -142,7 +142,8 @@
 }
 
 #reviews-display{
-    
+    display: flex;
+
 }
 
 #rating{
