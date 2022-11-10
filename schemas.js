@@ -9,4 +9,8 @@ const campgroundSchema = Joi.object({
     }).required()
 })
 
+const reviewSchema = Joi.object({
+    review:Joi.ob
+})
+
 module.exports=campgroundSchema
