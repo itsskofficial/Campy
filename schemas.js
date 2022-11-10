@@ -16,4 +16,4 @@ const reviewSchema = Joi.object({
     })
 })
 
-module.exports=campgroundSchema
+module.exports=campgroundSchema,reviewSchema
