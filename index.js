@@ -8,7 +8,7 @@ const wrapAsync = require('./utils/wrapasync')
 const ExpressError = require('./utils/expresserror')
 const campgroundSchema = require('./schemas')
 const Review = require('./models/review')
-const reviewSchema= require('./')
+const reviewSchema= require('./schemas')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
