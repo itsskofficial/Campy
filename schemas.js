@@ -10,7 +10,9 @@ const campgroundSchema = Joi.object({
 })
 
 const reviewSchema = Joi.object({
-    review:Joi.ob
+    review: Joi.object({
+        
+    })
 })
 
 module.exports=campgroundSchema
