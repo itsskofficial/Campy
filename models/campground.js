@@ -21,7 +21,7 @@ CampgroundSchema.post('findOneAndDelete', async function(dpc)){
     if (doc) {
         await Review.remove({
             id: {
-                $in:
+                $in:doc.reviews
             }
         })
     }
