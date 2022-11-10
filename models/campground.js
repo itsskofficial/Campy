@@ -20,7 +20,9 @@ const CampgroundSchema = new mongoose.Schema({
 CampgroundSchema.post('findOneAndDelete', async function(dpc)){
     if (doc) {
         await Review.remove({
-            id"
+            id: {
+                $in
+            }
         })
     }
 })
