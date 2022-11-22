@@ -32,5 +32,6 @@ router.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req, re
     await Campground.findByIdAndUpdate(req.params.campId, { $pull: { reviews: reviewId } })
     await Review.findByIdAndDelete(req.params.reviewId)
     res.redirect(`/campgrounds/${campId}`)
-
 }))
+
+module.exports=
