@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
+app.use('/')
 
 const sessionConfig = {
     secret: 'ojaswinithegreat',
