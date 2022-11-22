@@ -4,9 +4,8 @@ const mongoose = require('mongoose')
 const methodOverride=require('method-override')
 const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
-const wrapAsync = require('./utils/wrapasync')
 const ExpressError = require('./utils/expresserror')
-const campgroundSchema = require('./schemas')
+
 
 const campgrounds = require('./routes/campgrounds')
 const reviews=require('./routes/reviews')
