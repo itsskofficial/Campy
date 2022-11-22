@@ -6,16 +6,16 @@ app.get('/campgrounds', async (req, res) => {
     res.render('campgrounds/index', { campgrounds })
 })
 
-app.get('/campgrounds/new', (req, res) => {
+router.get('/campgrounds/new', (req, res) => {
     res.render('campgrounds/new')
 })
 
-app.get('/campgrounds/:id', async (req, res) => {
+router.get('/campgrounds/:id', async (req, res) => {
     const campground = await Campground.findById(req.params.id).populate('reviews')
     res.render('campgrounds/show', {campground})
 })
 
-app.get('/campgrounds/:id/edit', async (req, res) => {
+router.get('/campgrounds/:id/edit', async (req, res) => {
     const campground = await Campground.findById(req.params.id)
     res.render('campgrounds/edit',{campground})
 })
