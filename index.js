@@ -33,7 +33,7 @@ const sessionConfig = {
 app.use(session(sessionConfig))
 app.use(flash)
 app.use((req, res, next) => {
-    res.locals.success=
+    res.locals.success=flash
 })
 
 
