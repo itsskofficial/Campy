@@ -20,13 +20,13 @@ router.get('/:id/edit', async (req, res) => {
     res.render('campgrounds/edit',{campground})
 })
 
-router.post('/campgrounds',validateCampground, wrapAsync(async (req, res, next) => {
+router.post('/',validateCampground, wrapAsync(async (req, res, next) => {
     const campground = new Campground(req.body.campground)
     await campground.save()
     res.redirect(`campgrounds/${campground.id}`)
 }))
 
-router.put('/campgrounds/:id', validateCampground, wrapAsync(async (req, res, next) => {
+router.put('/:id', validateCampground, wrapAsync(async (req, res, next) => {
         const campground = await Campground.findById(req.params.id)
         await campground.update({...req.body.campground })
         res.redirect(`/campgrounds/${campground.id}`)
