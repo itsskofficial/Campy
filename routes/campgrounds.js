@@ -47,7 +47,7 @@ router.post('/',validateCampground, wrapAsync(async (req, res, next) => {
 router.put('/:id', validateCampground, wrapAsync(async (req, res, next) => {
         const campground = await Campground.findById(req.params.id)
     await campground.update({ ...req.body.campground })
-    
+    req.flash('success')
         res.redirect(`/campgrounds/${campground.id}`)
 }))
 
