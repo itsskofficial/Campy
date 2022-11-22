@@ -5,7 +5,7 @@ const ExpressError = require('./utils/expresserror')
 const Review = require('./models/review')
 const reviewSchema= require('./schemas')
 
-const router = express.Router()
+const router = express.Router({mergeParams:true})
 
 const validateReview = (req, res, next) => {
     const { error } = reviewSchema.validate(req.body)
