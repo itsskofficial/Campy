@@ -9,3 +9,18 @@ const validateReview = (req, res, next) => {
     }
 }
 
+app.post('/campgrounds/:id/reviews', validateReview,wrapAsync(async (req, res, next) => {
+    const campground= await Campground.findById(req.params.id)
+    const review = new Review(req.body.review)
+    campground.reviews.push(review)
+    await review.save()
+    await campground.save()
+    res.redirect(`/campgrounds/${campground.id}`)
+}))
+
+app.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req, res, next) => {
+    await Campground.findByIdAndUpdate(req.params.campId, { $pull: { reviews: reviewId } })
+    await Review.findByIdAndDelete(req.params.reviewId)
+    res.redirect(`/campgrounds/${campId}`)
+
+}))
