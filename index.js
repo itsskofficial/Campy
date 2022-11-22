@@ -6,7 +6,7 @@ const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
 const ExpressError = require('./utils/expresserror')
 const session = require('express-session')
-const 
+const flash=requi
 
 
 const campgrounds = require('./routes/campgrounds')
