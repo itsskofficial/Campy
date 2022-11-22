@@ -22,7 +22,7 @@ const sessionConfig = {
     resave: false,
     saveUnitialized: true,
     cookie: {
-        expires:Date.now() 
+        expires:Date.now() * 1000 * 60 * 60 * 
     }
 }
 
