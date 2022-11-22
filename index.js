@@ -19,7 +19,8 @@ app.use('/camgrounds', campgrounds)
 
 const sessionConfig = {
     secret: 'ojaswinithegreat',
-    resave:false,
+    resave: false,
+    saveUnitialized:true
 }
 
 app.use(session(sessionConfig))
