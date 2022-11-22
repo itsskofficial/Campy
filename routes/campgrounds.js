@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-app.get('/campgrounds', async (req, res) => {
+router.get('/campgrounds', async (req, res) => {
     const campgrounds = await Campground.find({})
     res.render('campgrounds/index', { campgrounds })
 })
