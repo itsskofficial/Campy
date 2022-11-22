@@ -32,7 +32,9 @@ const sessionConfig = {
 
 app.use(session(sessionConfig))
 app.use(flash)
-app.use(req)
+app.use((req, res, next) => {
+    
+})
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
