@@ -18,7 +18,8 @@ app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
 
 const sessionConfig = {
-    secret:'ojaswinithegreat'
+    secret: 'ojaswinithegreat',
+    resave:false,
 }
 
 app.use(session(sessionConfig))
