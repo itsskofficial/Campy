@@ -21,6 +21,8 @@ const sessionConfig = {
     secret:'ojaswinithegreat'
 }
 
+app.use(session)
+
 
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
