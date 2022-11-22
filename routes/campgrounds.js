@@ -32,7 +32,7 @@ router.put('/:id', validateCampground, wrapAsync(async (req, res, next) => {
         res.redirect(`/campgrounds/${campground.id}`)
 }))
 
-router.delete('/campgrounds/:id', wrapAsync(async (req, res, next) => {
+router.delete('/:id', wrapAsync(async (req, res, next) => {
         const campground = await Campground.findById(req.params.id)
         await campground.delete()
         res.redirect('/campgrounds')
