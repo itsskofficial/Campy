@@ -34,4 +34,4 @@ router.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req, re
     res.redirect(`/campgrounds/${campId}`)
 }))
 
-module.exports=
+module.exports=router
