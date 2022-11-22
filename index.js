@@ -5,6 +5,7 @@ const methodOverride=require('method-override')
 const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
 const ExpressError = require('./utils/expresserror')
+const session=require('express-session')
 
 
 const campgrounds = require('./routes/campgrounds')
