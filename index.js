@@ -14,7 +14,7 @@ const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
-app.use('/camgrounds',campgrounds)
+app.use('/camgrounds',campground)
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
