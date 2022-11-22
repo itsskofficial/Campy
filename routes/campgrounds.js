@@ -55,3 +55,5 @@ router.delete('/:id', wrapAsync(async (req, res, next) => {
         await campground.delete()
         res.redirect('/campgrounds')
 }))
+
+module.exports=router
