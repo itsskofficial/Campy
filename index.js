@@ -20,7 +20,7 @@ app.use('/camgrounds',campgrounds)
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify:false
+    useFindAndModify: false
 })
 
 const db = mongoose.connection
