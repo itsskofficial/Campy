@@ -34,16 +34,6 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 
-const validateReview = (req, res, next) => {
-    const { error } = reviewSchema.validate(req.body)
-    if (error) {
-        const msg = error.details.map(el=>el.message).join(',')
-        throw new ExpressError(msg,400)
-    }
-    else{
-        next()
-    }
-}
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
     const camp = new Campground({ title: "Camp", description: "Our first camping ground"})
