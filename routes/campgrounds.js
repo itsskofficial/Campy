@@ -10,12 +10,12 @@ router.get('/new', (req, res) => {
     res.render('campgrounds/new')
 })
 
-router.get('/campgrounds/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     const campground = await Campground.findById(req.params.id).populate('reviews')
     res.render('campgrounds/show', {campground})
 })
 
-router.get('/campgrounds/:id/edit', async (req, res) => {
+router.get('/:id/edit', async (req, res) => {
     const campground = await Campground.findById(req.params.id)
     res.render('campgrounds/edit',{campground})
 })
