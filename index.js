@@ -5,7 +5,8 @@ const methodOverride=require('method-override')
 const ejsMate=require('ejs-mate')
 const Campground = require('./models/campground')
 const ExpressError = require('./utils/expresserror')
-const session=require('express-session')
+const session = require('express-session')
+const 
 
 
 const campgrounds = require('./routes/campgrounds')
@@ -22,9 +23,9 @@ const sessionConfig = {
     resave: false,
     saveUnitialized: true,
     cookie: {
-        expires: Date.now() * 1000 * 60 * 60 * 24 * 7
+        expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
         maxAge: 1000 * 660 * 60 * 24 * 7,
-        httpOnly:
+        httpOnly:true
     }
 }
 
