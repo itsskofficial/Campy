@@ -45,21 +45,6 @@ app.get('/', (req,res) => {
     res.render('index')
 })
 
-app.post('/campgrounds/:id/reviews', validateReview,wrapAsync(async (req, res, next) => {
-    const campground= await Campground.findById(req.params.id)
-    const review = new Review(req.body.review)
-    campground.reviews.push(review)
-    await review.save()
-    await campground.save()
-    res.redirect(`/campgrounds/${campground.id}`)
-}))
-
-app.delete('/campgrounds/:campId/reviews/:reviewId', wrapAsync(async (req, res, next) => {
-    await Campground.findByIdAndUpdate(req.params.campId, { $pull: { reviews: reviewId } })
-    await Review.findByIdAndDelete(req.params.reviewId)
-    res.redirect(`/campgrounds/${campId}`)
-
-}))
 
 app.all('*', (req, res, next) => {
     next(new ExpressError("Page not found",404))
