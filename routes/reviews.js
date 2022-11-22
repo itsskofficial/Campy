@@ -19,7 +19,7 @@ const validateReview = (req, res, next) => {
     }
 }
 
-router.post('/cam/:id/reviews', validateReview,wrapAsync(async (req, res, next) => {
+router.post('/', validateReview,wrapAsync(async (req, res, next) => {
     const campground= await Campground.findById(req.params.id)
     const review = new Review(req.body.review)
     campground.reviews.push(review)
