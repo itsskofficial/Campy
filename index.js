@@ -16,6 +16,7 @@ app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 
 
+
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
     useUnifiedTopology:true
