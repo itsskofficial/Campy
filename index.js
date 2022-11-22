@@ -9,13 +9,13 @@ const ExpressError = require('./utils/expresserror')
 const campgroundSchema = require('./schemas')
 const Review = require('./models/review')
 const reviewSchema= require('./schemas')
-const campgrounds=require('./')
+const campgrounds=require('./routes/campgrounds')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
-app.use('/camgrounds',campground)
+app.use('/camgrounds',campgrounds)
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
