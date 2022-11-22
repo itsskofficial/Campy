@@ -22,7 +22,7 @@ const sessionConfig = {
     resave: false,
     saveUnitialized: true,
     cookie: {
-        
+        expires:Date.now() 
     }
 }
 
