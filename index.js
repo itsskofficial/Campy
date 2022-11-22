@@ -10,7 +10,7 @@ const campgroundSchema = require('./schemas')
 const Review = require('./models/review')
 const reviewSchema= require('./schemas')
 const campgrounds = require('./routes/campgrounds')
-const reviews
+const reviews=require('./routes/reviews')
 
 const app = express()
 app.use(express.urlencoded({ extended: true }))
