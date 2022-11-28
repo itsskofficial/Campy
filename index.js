@@ -55,7 +55,6 @@ passport.deserializeUser(User.deserializeUser())
 mongoose.connect('mongodb://localhost:27017/campy', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: false
 })
 
 const db = mongoose.connection
