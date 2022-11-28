@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 
 app.use(passport.initialize())
 app.use(passport.session())
-app.us
+passport.use(loca)
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
