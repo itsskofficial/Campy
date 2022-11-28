@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.use(passport.initialize())
 app.use(passport.session())
-passport.use(passportLocal(User.authenticate()))
+passport.use(new passportLocal(User.authenticate()))
 passport.serializeUser(User.serializeUser())
 passport.deSerializeUser(User.deSerializeUser())
 
