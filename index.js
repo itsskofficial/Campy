@@ -66,7 +66,7 @@ app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 
 app.get('/fakeUser', (req, res) => {
-    const user= new User({'username':''})
+    const user= new User({username:'Sarthak'})
 })
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
