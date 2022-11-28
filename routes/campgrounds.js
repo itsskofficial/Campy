@@ -1,5 +1,5 @@
 const express = require('express')
-const Campground = require('./models/campground')
+const Campground = require('./')
 const wrapAsync = require('./utils/wrapasync')
 const ExpressError = require('./utils/expresserror')
 const campgroundSchema = require('./schemas')
