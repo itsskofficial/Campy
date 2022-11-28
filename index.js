@@ -7,6 +7,8 @@ const Campground = require('./models/campground')
 const ExpressError = require('./utils/expresserror')
 const session = require('express-session')
 const flash=require('connect-flash')
+const passport = require('passport')
+const passportLocal=require('passport-local')
 
 
 const campgrounds = require('./routes/campgrounds')
