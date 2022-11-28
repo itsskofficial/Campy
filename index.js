@@ -16,6 +16,18 @@ const campgrounds = require('./routes/campgrounds')
 const reviews=require('./routes/reviews')
 
 const app = express()
+
+const sessionConfig = {
+    secret: 'ojaswinithegreat',
+    resave: false,
+    saveUnitialized: true,
+    cookie: {
+        expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 660 * 60 * 24 * 7,
+        httpOnly:true
+    }
+}
+
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
@@ -31,6 +43,7 @@ app.use((req, res, next) => {
 
 app.use(passport.initialize())
 app.use(passport.session())
+
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
