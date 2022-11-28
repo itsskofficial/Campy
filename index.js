@@ -8,7 +8,8 @@ const ExpressError = require('./utils/expresserror')
 const session = require('express-session')
 const flash=require('connect-flash')
 const passport = require('passport')
-const passportLocal=require('passport-local')
+const passportLocal = require('passport-local')
+const User = require('./models/user')
 
 
 const campgrounds = require('./routes/campgrounds')
