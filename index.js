@@ -14,7 +14,7 @@ const User = require('./models/user')
 
 const campgrounds = require('./routes/campgrounds')
 const reviews=require('./routes/reviews')
-const { serializeUser } = require('passport')
+
 
 const app = express()
 
