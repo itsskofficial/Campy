@@ -14,6 +14,7 @@ const User = require('./models/user')
 
 const campgrounds = require('./routes/campgrounds')
 const reviews=require('./routes/reviews')
+const { serializeUser } = require('passport')
 
 const app = express()
 
@@ -44,7 +45,7 @@ app.use((req, res, next) => {
 app.use(passport.initialize())
 app.use(passport.session())
 passport.use(passportLocal(User.authenticate()))
-passport.use(de)
+passport.use(serializeUser(User.serializeUser())
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
