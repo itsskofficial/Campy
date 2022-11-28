@@ -49,7 +49,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 passport.use(new passportLocal(User.authenticate()))
 passport.serializeUser(User.serializeUser())
-passport.deSerializeUser(User.deSerializeUser())
+passport.deSerializeUser(User.deserializeUser())
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
