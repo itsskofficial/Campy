@@ -21,8 +21,6 @@ app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
 app.use('/campgrounds/:id/reviews', reviews)
-app.use(passport.initialize())
-app.use(passport.session())
 
 const sessionConfig = {
     secret: 'ojaswinithegreat',
@@ -42,6 +40,9 @@ app.use((req, res, next) => {
     res.locals.error=req.flash('error')
     next()
 })
+
+app.use(passport.initialize())
+app.use(passport.session())
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
