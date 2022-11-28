@@ -1,7 +1,7 @@
 const express = require('express')
-const Campground = require('../mo')
-const wrapAsync = require('./utils/wrapasync')
-const ExpressError = require('./utils/expresserror')
+const Campground = require('../models/campground')
+const wrapAsync = require('../utils/wrapasync')
+const ExpressError = require('../utils/expresserror')
 const campgroundSchema = require('./schemas')
 const flash=require('connect-flash')
 
