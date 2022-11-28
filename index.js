@@ -18,16 +18,7 @@ const reviews=require('./routes/reviews')
 
 const app = express()
 
-const sessionConfig = {
-    secret: 'ojaswinithegreat',
-    resave: false,
-    saveUnitialized: true,
-    cookie: {
-        expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 660 * 60 * 24 * 7,
-        httpOnly:true
-    }
-}
+
 
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
@@ -41,6 +32,17 @@ app.use((req, res, next) => {
     res.locals.error=req.flash('error')
     next()
 })
+
+const sessionConfig = {
+    secret: 'ojaswinithegreat',
+    resave: false,
+    saveUnitialized: true,
+    cookie: {
+        expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 660 * 60 * 24 * 7,
+        httpOnly:true
+    }
+}
 
 app.use(passport.initialize())
 app.use(passport.session())
