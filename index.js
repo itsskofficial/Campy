@@ -45,8 +45,8 @@ app.use((req, res, next) => {
 app.use(passport.initialize())
 app.use(passport.session())
 passport.use(passportLocal(User.authenticate()))
-passport.use(serializeUser(User.serializeUser()))
-passport.use(deSerializeUser(User.deSerializeUser()))
+passport.serializeUser(User.serializeUser())
+passport.deSerializeUser(User.deSerializeUser())
 
 
 mongoose.connect('mongodb://localhost:27017/campy', {
