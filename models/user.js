@@ -12,4 +12,4 @@ const userSchema = new Schema({
     }
 })
 
-userSchema.plugin()
+userSchema.plugin(passportLocalMongoose)
