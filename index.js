@@ -21,18 +21,6 @@ app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
 app.use('/campgrounds/:id/reviews', reviews)
-
-const sessionConfig = {
-    secret: 'ojaswinithegreat',
-    resave: false,
-    saveUnitialized: true,
-    cookie: {
-        expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
-        maxAge: 1000 * 660 * 60 * 24 * 7,
-        httpOnly:true
-    }
-}
-
 app.use(session(sessionConfig))
 app.use(flash)
 app.use((req, res, next) => {
