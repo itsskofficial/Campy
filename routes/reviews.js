@@ -1,7 +1,7 @@
 const express = require('express')
-const Campground = require('./models/campground')
-const wrapAsync = require('./utils/wrapasync')
-const ExpressError = require('./utils/expresserror')
+const Campground = require('../models/campground')
+const wrapAsync = require('../utils/wrapasync')
+const ExpressError = require('../utils/expresserror')
 const Review = require('./models/review')
 const reviewSchema= require('./schemas')
 
