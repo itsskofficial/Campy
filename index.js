@@ -20,7 +20,7 @@ app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
 app.use('/campgrounds/:id/reviews', reviews)
-app.use()
+app.use(passport.initialize())
 
 const sessionConfig = {
     secret: 'ojaswinithegreat',
