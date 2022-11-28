@@ -21,7 +21,7 @@ const app = express()
 const sessionConfig = {
     secret: 'ojaswinithegreat',
     resave: false,
-    saveUnitialized: true,
+    saveuni
     cookie: {
         expires: Date.now() * 1000 * 60 * 60 * 24 * 7,
         maxAge: 1000 * 660 * 60 * 24 * 7,
