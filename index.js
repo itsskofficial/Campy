@@ -68,7 +68,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.get('/fakeUser', async (req, res) => {
     const user = new User({ username: 'Sarthak', email: 'abc@gmail.com' })
     const registeredUser = await User.register(user, 'notagoodpassword')
-    res.send(regis)
+    res.send(registeredUser)
 })
 app.get('/makecampground', async (req, res) => {
     res.send("Making campground here")
