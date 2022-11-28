@@ -21,6 +21,7 @@ app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgrounds)
 app.use('/campgrounds/:id/reviews', reviews)
 app.use(passport.initialize())
+app.use(passport.session())
 
 const sessionConfig = {
     secret: 'ojaswinithegreat',
