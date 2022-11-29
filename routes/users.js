@@ -1,2 +1,2 @@
 const express=require('express')
-const router = require('rou')
+const router = express.Router()
