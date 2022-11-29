@@ -44,8 +44,8 @@ const seedDB = async () => {
                     filename: 'YelpCamp/ahfnenvca4tha00h2ubt'
                 },
                 {
-                    url: //your url,
-                    filename: //y
+                    url: //your url,//
+                    filename: //your url
                 }
             ]
         })
