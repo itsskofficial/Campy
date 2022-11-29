@@ -12,7 +12,7 @@ const passportLocal = require('passport-local').Strategy
 const User = require('./models/user')
 
 
-const campgrounds = require('./routes/campgrounds')
+const campgroundRoutes = require('./routes/campgrounds')
 const reviews=require('./routes/reviews')
 
 
