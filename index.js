@@ -36,6 +36,7 @@ app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
 app.use('/camgrounds', campgroundRoutes)
 app.use('/campgrounds/:id/reviews', reviewRoutes)
+app.use('/',userRoutes)
 app.use(session(sessionConfig))
 app.use(flash)
 app.use((req, res, next) => {
