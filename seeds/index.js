@@ -41,11 +41,11 @@ const seedDB = async () => {
             images: [
                 {
                     url: dummurl, //your url
-                    filename: //your file name
+                    filename: dummyname//your file name
                 },
                 {
                     url: dummyurl,//your url,
-                    filename: //your url
+                    filename: dummyname//your url
                 }
             ]
         })
