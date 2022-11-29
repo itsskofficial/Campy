@@ -40,8 +40,8 @@ const seedDB = async () => {
             },
             images: [
                 {
-                    url: dummy url,
-                    filename: 'YelpCamp/ahfnenvca4tha00h2ubt'
+                    url: dummurl,
+                    filename: //your file name
                 },
                 {
                     url: dummyurl,//your url,
