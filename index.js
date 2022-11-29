@@ -14,6 +14,7 @@ const User = require('./models/user')
 
 const campgroundRoutes = require('./routes/campgrounds')
 const reviewRoutes=require('./routes/reviews')
+const userRoutes=require('./routes/users')
 
 
 const app = express()
