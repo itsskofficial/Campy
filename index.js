@@ -13,7 +13,7 @@ const User = require('./models/user')
 
 
 const campgroundRoutes = require('./routes/campgrounds')
-const reviews=require('./routes/reviews')
+const reviewRoutes=require('./routes/reviews')
 
 
 const app = express()
@@ -33,7 +33,7 @@ const sessionConfig = {
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
 app.use(express.static(__dirname + '/public'))
-app.use('/camgrounds', campgrounds)
+app.use('/camgrounds', campgroundRoutes)
 app.use('/campgrounds/:id/reviews', reviews)
 app.use(session(sessionConfig))
 app.use(flash)
