@@ -40,7 +40,7 @@ const seedDB = async () => {
             },
             images: [
                 {
-                    url: dummurl,
+                    url: dummurl, //your url
                     filename: //your file name
                 },
                 {
